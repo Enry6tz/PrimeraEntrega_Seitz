@@ -31,16 +31,16 @@ function suma(prod) {
 
 
 let num =Number(prompt("ingrese cantidad de productos a ingresar, entre 1 y 10"))
-while (num<=0 || num > 10 || rta !=true){
+while (num<=0 || num > 10 || rta ==true){
     console.log("no se puede procesar")
     num =(prompt("ingrese cantidad de productos a ingresar, o ingrese ESC para salir"))
-    if (num == "ESC"){rta= false}
+    if (num == "ESC"){rta= true}
     else{num =Number(num)}
 }           
 
 
 
-if(rta != true){
+if(rta == false){
 console.log ("bienvenido usted ingresará: "+ num +" productos")
 console.log("ingrese tipo de productos")
 
@@ -50,5 +50,7 @@ prod =Number(prompt(i+1  + "° producdto a ingresar:"))
 suma(prod)
 }
 console.log ("el total es "+ tot + ", su ganancia es de: " + gan)
-}
 console.log("muchas gracias, hasta luego! :)")
+}
+else{
+console.log("muchas gracias, hasta luego! :)")}
