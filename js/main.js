@@ -9,20 +9,20 @@ const carne =Number(420)
 function suma(prod) {
     switch (prod) {
         case 1: 
-        tot += aceite
-        gan += aceite*0,05
+        tot+= aceite
+        gan+= aceite*0,05
             break;
         case 2:
         tot+= vino
-        gan += vino*0,4 
+        gan+= vino*0,4 
             break;
         case 3:
         tot+= pan
-        gan += pan*0,1
+        gan+= pan*0,1
             break;
         case 4:
         tot+= carne
-        gan += carne*0,2
+        gan+= carne*0,2
             break;
         default:
             return console.log("producto no encontrado");
@@ -31,7 +31,7 @@ function suma(prod) {
 
 
 let num =Number(prompt("ingrese cantidad de productos a ingresar"))
-while (!isNaN(num) && rta !=false){
+while (!isNaN(num) && rta !=true){
     alert("no ingresaste valor numerico. ingrese valor numerico o ESC para salir")
     num =(prompt("ingrese cantidad de productos a ingresar"))
     if (num.ToUpperCase() == "ESC"){rta= false}
