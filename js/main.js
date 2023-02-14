@@ -34,7 +34,7 @@ let num =Number(prompt("ingrese cantidad de productos a ingresar, entre 1 y 10")
 while (num<=0 || num > 10 || rta !=true){
     console.log("no se puede procesar")
     num =(prompt("ingrese cantidad de productos a ingresar, o ingrese ESC para salir"))
-    if (num.ToUpperCase() == "ESC"){rta= false}
+    if (num == "ESC"){rta= false}
     else{num =Number(num)}
 }           
 
