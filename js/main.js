@@ -1,4 +1,4 @@
-let rta=""
+let rta=false
 let tot=0
 let gan=0
 const aceite = Number(300)
@@ -28,15 +28,19 @@ function suma(prod) {
             return console.log("producto no encontrado");
     }
 }
+
+
 let num =Number(prompt("ingrese cantidad de productos a ingresar"))
-while (typeof(num) !== 'number' ){
+while (!isNaN(num) && rta !=false){
     alert("no ingresaste valor numerico. ingrese valor numerico o ESC para salir")
-    num =Number(prompt("ingrese cantidad de productos a ingresar"))
-}
+    num =(prompt("ingrese cantidad de productos a ingresar"))
+    if (num.ToUpperCase() == "ESC"){rta= false}
+    else{num =Number(num)}
+}           
 
 
 
-if(rta != "ESC"){
+if(rta != true){
 console.log ("bienvenido usted ingresará: "+ num +" productos")
 console.log("ingrese tipo de productos")
 
