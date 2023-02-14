@@ -30,10 +30,10 @@ function suma(prod) {
 }
 
 
-let num =Number(prompt("ingrese cantidad de productos a ingresar"))
-while (!isNaN(num) && rta !=true){
-    alert("no ingresaste valor numerico. ingrese valor numerico o ESC para salir")
-    num =(prompt("ingrese cantidad de productos a ingresar"))
+let num =Number(prompt("ingrese cantidad de productos a ingresar, entre 1 y 10"))
+while (num<=0 && num > 10 && rta !=true){
+    console.log("no se puede procesar")
+    num =(prompt("ingrese cantidad de productos a ingresar, o ingrese ESC para salir"))
     if (num.ToUpperCase() == "ESC"){rta= false}
     else{num =Number(num)}
 }           
@@ -51,4 +51,4 @@ suma(prod)
 }
 console.log ("el total es "+ tot + ", su ganancia es de: " + gan)
 }
-alert("muchas gracias, hasta luego! :)")
+console.log("muchas gracias, hasta luego! :)")
